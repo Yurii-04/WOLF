@@ -1,0 +1,127 @@
+.roadmap__wrapper {
+    max-width: 1600px;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roadmap__title {
+    text-align: center;
+    margin: 5vh 0;
+}
+
+.gallery {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery__img {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    display: flex;
+}
+
+.gallery__img--inner {
+    background: rgba(243, 87, 227, 0.9);
+    box-shadow: 0 10px 12px -2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    transition: all 500ms;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 230px;
+}
+
+.roadmap-chart__btn {
+    padding: 18px;
+    background: rgba(243, 87, 227, 0.9);
+}
+
+@media (max-width: 963px) {
+    .roadmap-chart__btn{
+        display: none;
+    }
+
+    .roadmap__title{
+        margin: auto;
+    }
+}
+
+.gallery__img--inner:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 16px -7px rgba(0, 0, 0, 0.3);
+}
+
+.gallery__img--inner h3 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+}
+
+.gallery__img--inner p {
+    font-size: 1rem;
+    padding: 10px 0;
+    color: #f3eaea;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .gallery__img {
+        width: 50%;
+    }
+
+    .gallery__img:nth-child(odd) {
+        padding-right: calc(15px / 2);
+    }
+
+    .gallery__img:nth-child(even) {
+        padding-left: calc(15px / 2);
+    }
+
+    .gallery__img--inner {
+        height: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .gallery__img {
+        width: 33.3333%;
+    }
+
+    .gallery__img:nth-of-type(8n+1),
+    .gallery__img:nth-of-type(8n+2) {
+        width: 50%;
+    }
+
+    .gallery__img:nth-of-type(8n+4) {
+        padding-right: calc(15px / 2);
+    }
+
+    .gallery__img:nth-of-type(8n+5) {
+        padding-left: calc(15px / 2);
+        padding-right: 0;
+    }
+
+    .gallery__img:nth-of-type(8n+6) {
+        padding-left: 0;
+        padding-right: calc(15px / 2);
+    }
+
+    .gallery__img:nth-of-type(8n+7) {
+        padding-left: calc(15px / 2);
+    }
+
+    .gallery__img--inner {
+        height: auto;
+    }
+}
