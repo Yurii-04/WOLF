@@ -11,6 +11,10 @@
     height: 100%;
 }
 
+.preloader__img {
+    max-width: 100%;
+}
+
 .disappearance {
     animation: opac .3s linear forwards;
 }
