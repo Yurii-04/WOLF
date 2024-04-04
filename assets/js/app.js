@@ -42,7 +42,7 @@ document.querySelectorAll(".menu__item").forEach((n) =>
 // print text
 const typedTextSpan = document.querySelector(".typed-text");
 
-const textArray = ["WOLF - The Cryptocurrency Club"];
+const textArray = ["LandWolfNOT - The Cryptocurrency Club"];
 const typingDelay = 100;
 const textArrayIndex = 0;
 let charIndex = 0;
