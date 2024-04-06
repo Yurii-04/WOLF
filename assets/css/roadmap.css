@@ -47,11 +47,11 @@
 }
 
 @media (max-width: 963px) {
-    .roadmap-chart__btn{
+    .roadmap-chart__btn {
         display: none;
     }
 
-    .roadmap__title{
+    .roadmap__title {
         margin: auto;
     }
 }
@@ -125,3 +125,13 @@
         height: auto;
     }
 }
+
+@media (max-width: 1180px) {
+    .gallery__img:nth-child(1) {
+        margin-top: 10px;
+    }
+    .gallery__img:nth-child(2) {
+        margin-top: 10px;
+    }
+}
+

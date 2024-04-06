@@ -2,6 +2,7 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav__list-wrapper");
 const bars = hamburger.querySelectorAll(".bar");
+const menuItems = document.querySelectorAll(".nav__item");
 
 hamburger.addEventListener("mouseenter", () => {
     bars[1].style.width = "25px";
@@ -30,10 +31,10 @@ hamburger.addEventListener("click", () => {
     }
 });
 
-document.querySelectorAll(".menu__item").forEach((n) =>
+menuItems.forEach((n) =>
     n.addEventListener("click", () => {
-        hamburger.classList.remove("active");
         navMenu.classList.remove("active");
+        hamburger.classList.remove("active");
         document.documentElement.style.overflow = "auto";
         navMenu.blur();
     })
